@@ -1,0 +1,1 @@
+don't delete this folder, as all the files will get stored here. since I'm not using amazon s3 or any other bucket

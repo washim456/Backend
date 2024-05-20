@@ -3,18 +3,26 @@ const bcrypt = require("bcrypt")
 
 const adminSchema = new mongoose.Schema({
     name: {
-        type: "String"
+        type: String
     },
     email: {
-        type: "String"
+        type: String
     },
     password: {
-        type: "String"
+        type: String
     },
     role: {
-        type: "String",
+        type: String,
         default : "admin"
-    }
+    },
+    profilePic : {
+        fileName: {
+             type: String
+         },
+        url : {
+            type: String
+        }
+     },
 })
 
 adminSchema.pre("save", async function (next) {

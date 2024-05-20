@@ -54,7 +54,15 @@ const internSchema = new mongoose.Schema({
     role : {
         type: String,
         default: "intern"
-    }
+    },
+    profilePic : {
+        fileName: {
+             type: String
+         },
+        url : {
+            type: String
+        }
+     },
 })
 
 internSchema.pre("save", async function (next) {

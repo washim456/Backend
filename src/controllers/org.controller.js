@@ -1,3 +1,5 @@
+// not in use
+
 const Org = require("../models/org.model")
 
 exports.fetchAll = async (req,res) => {
